@@ -1,56 +1,57 @@
 :host {
-    .header {
-        position: fixed; //torna um elemento fixo ao scroll da página / disponibiliza outras 4 tags [left, right, top, botton]
-        top: 0; 
-        left: 0;
-        width: 100%; //para ocupar 100% do topo e da direita
+  .header {
+    position: fixed; //torna um elemento fixo ao scroll da página / disponibiliza outras 4 tags [left, right, top, botton]
+    top: 0;
+    left: 0;
+    width: 100%; //para ocupar 100% do topo e da direita
 
-        padding: 4rem 12%;
-        display: flex; //alinha os elementos à direita na mesma linha 
-        justify-content: space-between; //para espaçar os elementos o máximo possível
-        align-items: center; //alinha os elementos desta classe ao centro (de cima para baixo)
+    padding: 4rem 12%;
+    display: flex; //alinha os elementos à direita na mesma linha 
+    justify-content: space-between; //para espaçar os elementos o máximo possível
+    align-items: center; //alinha os elementos desta classe ao centro (de cima para baixo)
 
-        background-color: rgba(0, 0, 0, 0.3);
-        backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
 
-        z-index: 5; //plano cartesiano (x,y,z)
+    z-index: 5; //plano cartesiano (x,y,z)
 
-        .logo {
-            font-size: 3rem;
-            color: var(--text-color);
-            font-weight: 800;
+    .logo {
+      font-size: 3rem;
+      color: var(--text-color);
+      font-weight: 800;
 
-            cursor: pointer; //para ativar o cursor do mouse
-            transition: 0.3s ease;
-            
-            &:hover {
-                transform: scale(1.1);
-            }
+      cursor: pointer; //para ativar o cursor do mouse
+      transition: 0.3s ease;
 
-            span {
-                text-shadow: 0 0 25px var(--main-color);
-                color: var(--main-color);
-            }
+      &:hover {
+        transform: scale(1.1);
+      }
 
-        }
-
-        .nav {
-            a {
-                font-size: 1.8rem;
-                color: var(--text-color);
-                margin-left: 4rem;
-                font-weight: 500;
-
-                transition: 0.3s ease;
-                border-bottom: 3px solid transparent;
-
-                &:hover, &.active {
-                    color: var(--main-color);
-                    border-bottom: 3px solid var(--main-color);
-
-                }
-            }
-        }
+      span {
+        text-shadow: 0 0 25px var(--main-color);
+        color: var(--main-color);
+      }
 
     }
+
+    .nav {
+      a {
+        font-size: 1.8rem;
+        color: var(--text-color);
+        margin-left: 4rem;
+        font-weight: 500;
+
+        transition: 0.3s ease;
+        border-bottom: 3px solid transparent;
+
+        &:hover,
+        &.active {
+          color: var(--main-color);
+          border-bottom: 3px solid var(--main-color);
+
+        }
+      }
+    }
+
+  }
 }
