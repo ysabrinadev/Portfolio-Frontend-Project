@@ -1,0 +1,91 @@
+:host {
+  .education {
+    padding: 10rem 1.5rem;
+    background: var(--second-bg-color);
+
+    .timeline-items {
+      max-width: 120rem;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: calc(50% - 0.1rem);
+        width: 0.5rem;
+        height: 100%;
+        background-color: var(--main-color);
+      }
+
+      .timeline-item {
+        width: 100%;
+        margin-bottom: 4rem;
+        position: relative;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &:nth-child(odd) {
+          padding-right: calc(50% + 3rem);
+          text-align: right;
+        }
+
+        &:nth-child(even) {
+          padding-left: calc(50% + 3rem);
+        }
+
+        .timeline-dot {
+          width: 2.1rem;
+          height: 2.1rem;
+          background-color: var(--main-color);
+          box-shadow: 0 0 2.5rem var(--main-color), 0 0 5.0rem var(--main-color);
+          position: absolute;
+          left: calc(50% - 0.9rem);
+          border-radius: 50%;
+          top: 1rem;
+        }
+
+        .timeline-date {
+          font-size: 2rem;
+          font-weight: 800;
+          color: #fff;
+          margin: 0.6rem 0 1.5rem;
+        }
+
+        .timeline-content {
+          background-color: var(--bg-color);
+          border: 0.3rem solid var(--main-color);
+          padding: 3rem 5rem;
+          border-radius: 1.5rem;
+          box-shadow: 0 0 1rem var(--main-color);
+
+          cursor: pointer;
+          transition: 0.3s ease-in-out;
+
+          &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 2.5rem var(--main-color);
+          }
+
+          h3 {
+            font-size: 2rem;
+            color: #fff;
+            margin: 0 0 1rem;
+            font-weight: 500;
+          }
+
+          p {
+            font-size: 1.6rem;
+            color: #fff;
+            text-align: justify;
+            font-weight: 300;
+            line-height: 2.2rem;
+          }
+        }
+      }
+    }
+  }
+}
