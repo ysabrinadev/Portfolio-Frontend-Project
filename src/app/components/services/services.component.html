@@ -1,0 +1,17 @@
+<section class="services" id="services">
+  <h2 class="heading">Services</h2>
+
+  <div class="service-container">
+    @for(item of servicesList; track item.title)
+    {
+    <div class="services-box">
+      <div class="service-info">
+        <h4>{{ item.title }}</h4>
+
+        <p>{{ item.description }}</p>
+      </div>
+    </div>
+    }
+  </div>
+
+</section>
