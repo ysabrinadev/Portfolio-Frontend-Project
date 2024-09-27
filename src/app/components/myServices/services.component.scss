@@ -12,7 +12,7 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       align-items: center;
-      gap: 2.5rem;
+      gap: 3rem;
 
       .services-box {
         background-color: var(--main-color);
@@ -53,6 +53,7 @@
             font-size: 1.6rem;
             font-weight: 600;
             line-height: 1.7;
+            text-align: justify;
 
             max-height: 100px;
             margin: auto;

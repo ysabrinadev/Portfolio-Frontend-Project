@@ -8,6 +8,7 @@ import { IServicesList } from '../../interfaces/IServicesList';
   templateUrl: './services.component.html',
   styleUrl: './services.component.scss'
 })
+
 export class ServicesComponent {
   // Variáveis
   public servicesList: IServicesList[] = [
@@ -27,7 +28,5 @@ export class ServicesComponent {
       title: "Data Analyses",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eaque in quos hic architecto minus beatae, illum modi obcaecati doloribus eligendi cupiditate rem possimus, officia commodi voluptates consectetur asperiores impedit?",
     },
-
   ];
-
 }

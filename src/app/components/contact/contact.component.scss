@@ -1,0 +1,73 @@
+:host {
+  .contact {
+    background-color: var(--bg-color);
+
+    h2 {
+      margin-bottom: 3rem;
+      color: #fff;
+    }
+
+    form {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+
+      gap: 3rem;
+      margin: 5rem auto;
+      text-align: center;
+
+      .input-box {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+
+        input {
+          width: 100%;
+          padding: 2.5rem;
+          font-size: 1.8rem;
+          color: var(--text-color);
+
+          background: var(--second-bg-color);
+          border-radius: 1rem;
+          border: 2px solid var(--main-color);
+
+          margin: 1.5rem 0;
+          resize: none;
+        }
+      }
+
+      .second-input-group {
+        textarea {
+          width: 100%;
+          padding: 2.5rem;
+          font-size: 1.8rem;
+          color: var(--text-color);
+          background: var(--second-bg-color);
+          border-radius: 1rem;
+          border: 2px solid var(--main-color);
+          margin: 1.5rem 0 3rem;
+          resize: none;
+        }
+
+        .btn {
+          margin-bottom: 2rem;
+
+          &[disabled] {
+            opacity: 0.6;
+            box-shadow: none;
+            cursor: not-allowed;
+            &:hover {
+              transform: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

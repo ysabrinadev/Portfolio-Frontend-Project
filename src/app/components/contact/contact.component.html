@@ -1,0 +1,24 @@
+<section class="contact" id="contact">
+  <h2 class="heading">Contact <span>Me</span></h2>
+
+  <form [formGroup]="contactForm" (ngSubmite)="submite()">
+    <div class="input-group">
+      <div class="input-box">
+        <input type="text" placeholder="Full name..." formControlName="name" max="50">
+        <input type="email" placeholder="example@example.com" formControlName="email">
+      </div>
+
+      <div class="input-box">
+        <input type="number" placeholder="+00 (00) 0.0000-0000" formControlName="phoneNumber">
+        <input type="text" placeholder="Subject..." formControlName="subject">
+      </div>
+    </div>
+
+    <div class="second-input-group">
+      <textarea cols="30" rows="10" type="text" placeholder="Your message..." formControlName="message"></textarea>
+      <button class="btn" type="submit" [disabled]="!contactForm.valid" (click)="submite()">Send message</button>
+    </div>
+    
+  </form>
+
+</section>
