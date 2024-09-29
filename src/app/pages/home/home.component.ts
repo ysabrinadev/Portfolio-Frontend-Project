@@ -5,6 +5,7 @@ import { EducationsComponent } from '../../components/educations/educations.comp
 import { ServicesComponent } from '../../components/myServices/services.component';
 import { TestimonialsComponent } from '../../components/testimonials/testimonials.component';
 import { ContactComponent } from '../../components/contact/contact.component';
+import { FooterComponent } from '../../components/footer/footer.component';
 
 @Component({
   selector: 'app-home',
@@ -15,7 +16,8 @@ import { ContactComponent } from '../../components/contact/contact.component';
     EducationsComponent,
     ServicesComponent,
     TestimonialsComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
